@@ -51,7 +51,8 @@ export default function HeroSection() {
             style={{ 
               objectPosition: 'center',
               imageRendering: 'auto',
-              minHeight: '120vh' // Ensures the GIF covers extra vertical space
+              
+              minHeight: '150vh' // Ensures the GIF covers extra vertical space
             }}
             loading="eager"
             decoding="auto"

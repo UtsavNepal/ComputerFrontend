@@ -10,7 +10,7 @@ export default function VersatileSection() {
             <img 
               src="a.webp" 
               alt="Premium Gold Laptop" 
-              className="w-full h-auto rounded-2xl shadow-2xl"
+              
             />
           </div>
         </PopInAnimation>
