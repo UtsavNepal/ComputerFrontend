@@ -41,34 +41,28 @@ export default function HeroSection() {
       className="bg-slate-800 text-white min-h-screen flex items-center overflow-hidden relative"
       style={{ fontFamily: 'Abyssinica SIL, serif' }}
     >
-      {/* Background Image/GIF Section - Now with min-height to ensure coverage */}
-      <div className="absolute inset-0 w-full min-h-[120vh] z-0">
-        <SlideInAnimation direction="right" delay={0.3}>
-          <img
-            src="a.gif"
-            alt="Premium Laptop Setup"
-            className="w-full h-full object-cover"
-            style={{ 
-              objectPosition: 'center',
-              imageRendering: 'auto',
-              
-              minHeight: '150vh' // Ensures the GIF covers extra vertical space
-            }}
-            loading="eager"
-            decoding="auto"
-          />
-        </SlideInAnimation>
+      {/* Background GIF (a.gif) - Full coverage */}
+      <div className="absolute inset-0 w-full h-full z-0">
+        <img
+          src="a.gif"
+          alt="Background Tech Animation"
+          className="w-full h-full object-cover absolute bottom-0"
+          style={{ 
+            objectPosition: 'center bottom',
+            minHeight: '100vh'
+          }}
+          loading="eager"
+        />
       </div>
 
-      {/* Dark overlay for better text readability - extended to match GIF height */}
-      <div className="absolute inset-0 bg-black/40 z-0 min-h-[120vh]"></div>
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-black/40 z-0"></div>
 
-      {/* Content Container - positioned properly within viewport */}
+      {/* Content Container */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-16 relative z-10 w-full h-full flex items-center">
-        {/* Content Section - Text in front of image */}
         <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12 w-full">
           
-          {/* Text Section - Now with responsive padding and margins */}
+          {/* Text Section (Left side) */}
           <div className="w-full lg:w-1/2 space-y-6 lg:space-y-8 text-center lg:text-left px-4 sm:px-6 py-12 sm:py-16">
             <SlideInAnimation direction="left" delay={0.2}>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white drop-shadow-lg mb-4 sm:mb-6">
@@ -79,7 +73,7 @@ export default function HeroSection() {
 
             <SlideInAnimation direction="left" delay={0.4}>
               <p className="text-sm sm:text-base lg:text-lg text-gray-100 max-w-2xl mx-auto lg:mx-0 drop-shadow-md mb-6 sm:mb-8">
-                Discover the latest in computer technology with our top-of-the-line laptops designed to power your digital world. From sleek ultrabooks to powerful gaming machines, we offer a diverse selection to meet your computing needs.
+                Discover the latest in computer technology with our top-of-the-line laptops designed to power your digital world.
               </p>
             </SlideInAnimation>
 
@@ -99,8 +93,20 @@ export default function HeroSection() {
             </SlideInAnimation>
           </div>
 
-          {/* Spacer for right side on desktop */}
-          <div className="hidden lg:block lg:w-1/2"></div>
+          {/* Right Side Content (b.gif on desktop) */}
+          <div className="hidden lg:block lg:w-1/2 relative">
+            <SlideInAnimation direction="right" delay={0.3}>
+              <img
+                src="b.gif"
+                alt="Featured Product Animation"
+                className="w-full h-auto max-h-[70vh] object-contain"
+                style={{
+                  filter: 'drop-shadow(0 0 20px rgba(251, 191, 36, 0.3))'
+                }}
+                loading="eager"
+              />
+            </SlideInAnimation>
+          </div>
         </div>
       </div>
       
