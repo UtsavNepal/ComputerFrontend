@@ -11,22 +11,22 @@ export default function HeroSection() {
     const newAttempts = attempts + 1
     setAttempts(newAttempts)
     
-    // Generate random position
+    
     const directions = [
-      { x: 200, y: 0 },      // right
-      { x: -200, y: 0 },     // left
-      { x: 0, y: -100 },     // up
+      { x: 150, y: 0 },      // right
+      { x: -50, y: 0 },     // left
+      { x: 0, y: -50 },     // up
       { x: 0, y: 100 },      // down
       { x: 150, y: -80 },    // diagonal up-right
-      { x: -150, y: -80 },   // diagonal up-left
+      { x: -50, y: -80 },   // diagonal up-left
       { x: 150, y: 80 },     // diagonal down-right
-      { x: -150, y: 80 }     // diagonal down-left
+      { x: -50, y: 80 }     // diagonal down-left
     ]
     
     const randomDirection = directions[Math.floor(Math.random() * directions.length)]
     setButtonPosition(randomDirection)
     
-    // Show toast after 3 attempts
+
     if (newAttempts >= 3) {
       setShowToast(true)
       setTimeout(() => setShowToast(false), 3000)
