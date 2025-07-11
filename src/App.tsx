@@ -9,14 +9,17 @@ import RedefiningSection from '@/components/RedefiningSection'
 import ExceptionalSection from '@/components/ExceptionalSection'
 import Footer from '@/components/Footer'
 
+
 export default function App() {
   return (
     <div className="min-h-screen bg-white scroll-smooth">
       <Header />
       <main className="overflow-hidden">
+        
         <section id="home"><HeroSection /></section>
         <section id="products"><VersatileSection /></section>
         <section id="features"><ElevatingSection /></section>
+      
         <section id="powered"><PoweredBySection /></section>
         <section id="hp-envy"><HPEnvySection /></section>
         <section id="workspace"><WorkspaceSection /></section>

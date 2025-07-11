@@ -3,7 +3,7 @@ import { Monitor, Facebook, Instagram, Mail } from "lucide-react"
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-800 text-white py-16" style={{ fontFamily: 'Abyssinica SIL, serif' }}>
+    <footer  id="detail" className="bg-slate-800 text-white py-16" style={{ fontFamily: 'Abyssinica SIL, serif' }}>
       <div className="max-w-[2000px] mx-auto px-4 md:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="space-y-4">

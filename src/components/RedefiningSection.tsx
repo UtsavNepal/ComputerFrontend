@@ -3,7 +3,7 @@ import React from "react"
 
 export default function RedefiningSection() {
     return (
-  <section className="bg-gradient-to-br from-amber-100 to-amber-200 py-20" style={{ fontFamily: 'Abyssinica SIL, serif' }}>
+  <section id="about" className="bg-gradient-to-br from-amber-100 to-amber-200 py-20" style={{ fontFamily: 'Abyssinica SIL, serif' }}>
       <div className="max-w-[2000px] mx-auto px-4 md:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
         <SlideInAnimation direction="left" delay={0.1}>
           <div className="relative">

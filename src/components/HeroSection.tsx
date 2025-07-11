@@ -95,11 +95,11 @@ export default function HeroSection() {
 
           {/* Right Side Content (b.gif on desktop) */}
           <div className="hidden lg:block lg:w-1/2 relative">
-            <SlideInAnimation direction="right" delay={0.3}>
+            <SlideInAnimation direction="right" delay={0.4}>
               <img
-                src="b.gif"
+                src="Z.png"
                 alt="Featured Product Animation"
-                className="w-full h-auto max-h-[70vh] object-contain"
+                className="w-full h-auto max-h-[90vh] max-w-[900px]"
                 style={{
                   filter: 'drop-shadow(0 0 20px rgba(251, 191, 36, 0.3))'
                 }}

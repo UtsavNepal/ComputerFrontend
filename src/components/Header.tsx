@@ -22,7 +22,7 @@ export default function Header() {
           <a href="#home" className="text-gray-300 hover:text-white transition-colors">Home</a>
           <a href="#about" className="text-gray-300 hover:text-white transition-colors">About</a>
           <a href="#products" className="text-gray-300 hover:text-white transition-colors">Products</a>
-          <a href="#contact" className="text-gray-300 hover:text-white transition-colors">Contact</a>
+          <a href="#detail" className="text-gray-300 hover:text-white transition-colors">Contact</a>
           <Button className="bg-amber-600 hover:bg-amber-700 text-white px-6">FAQ</Button>
         </nav>
 
@@ -41,7 +41,7 @@ export default function Header() {
           <a href="#home" className="block text-gray-300 hover:text-white transition-colors">Home</a>
           <a href="#about" className="block text-gray-300 hover:text-white transition-colors">About</a>
           <a href="#products" className="block text-gray-300 hover:text-white transition-colors">Products</a>
-          <a href="#contact" className="block text-gray-300 hover:text-white transition-colors">Contact</a>
+          <a href="#detail" className="block text-gray-300 hover:text-white transition-colors">Contact</a>
           <Button className="bg-amber-600 hover:bg-amber-700 text-white w-full">FAQ</Button>
         </div>
       )}
